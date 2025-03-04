@@ -1,10 +1,22 @@
-HELP.md
+# Исключить скомпилированные файлы
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.class
 
-### STS ###
+# Исключить файлы Maven
+.mvn/
+
+# Исключить временные файлы и логи
+*.log
+*.tmp
+
+# Исключить файлы IDE
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Spring Tool Suite / Eclipse
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +25,12 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
